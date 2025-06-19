@@ -5,8 +5,7 @@ const BlogCard = ({ blog }) => {
     const navigate = useNavigate();
     const { _id, title, description, category, image } = blog;
 
-    // Optional: strip HTML tags from description
-    const cleanDescription = description.replace(/<[^>]+>/g, '');
+    
 
     return (
         <div 

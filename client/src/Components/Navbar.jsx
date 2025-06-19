@@ -6,7 +6,7 @@ const Navbar = () => {
   const {navigate,token} = useAppContext()
 
   return (
-    <div className="w-full absolute top-0 bg-transparent  z-50">
+    <div className="w-full absolute top-[-0rem] bg-transparent  z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <img

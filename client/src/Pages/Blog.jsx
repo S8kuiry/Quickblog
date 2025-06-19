@@ -78,9 +78,10 @@ const Blog = () => {
   /* ---------- render ---------- */
   return data ? (
     <>
+    <Navbar />
       <div className="relative">
-        <Navbar />
-        <img src={assets.gradientBackground} className="absolute -z-1 -top-70 -opacity-50" />
+        
+        <img src={assets.gradientBackground} className="absolute -z-1 -top-[60px] -opacity-50" />
 
         {/* header */}
         <div className="w-full flex flex-col items-center justify-center mt-[11rem]">
