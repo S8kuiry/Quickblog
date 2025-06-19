@@ -7,7 +7,7 @@ const Footer = () => {
     
 
     return (
-        <footer className='w-full bg-primary/10 py-8 px-[7rem] text-sm text-gray-600 absolute bottom-[-50rem]'>
+        <footer className='w-full bg-primary/10 py-8 px-[7rem] text-sm text-gray-600 absolute bottom-[-65rem]'>
             <div className="flex flex-col md:flex-row flex-wrap justify-between gap-12 max-w-7xl mx-auto pt-2">
                 
                 {/* Logo & Description */}
