@@ -7,7 +7,7 @@ import Dashboard from './Pages/Admin/Dashboard.jsx'
 import AddBlog from './Pages/Admin/AddBlog.jsx'
 import ListBlog from './Pages/Admin/ListBlog.jsx'
 import Comments  from './Pages/Admin/Comments.jsx'
-import Login from './Components/Admin/login.jsx'
+import Login from './components/admin/Login.jsx'
 import 'quill/dist/quill.snow.css'; // ✅ Important: must be imported
 import {Toaster} from 'react-hot-toast'
 import { useAppContext } from '../context/AppContext.jsx'
