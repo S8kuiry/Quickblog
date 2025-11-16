@@ -130,17 +130,39 @@ export const addComment = async (req,res)=>{
   }
 
 }
-export const getBlogComments = async (req,res)=>{
+
+
+export const getBlogComments = async (req, res) => {
   try {
-    const {blogId} = req.body
-    const comments = await Comment.find({blog:blogId,isApproved:true}).sort({createdAt:-1})
-    res.json({success:true,message:"Comments fetched succesfully",comments:comments})
-    
+    const { blogId } = req.body;
+
+    if (!blogId) {
+      return res.status(400).json({
+        success: false,
+        message: "blogId is required"
+      });
+    }
+
+    const comments = await Comment.find({
+      blog: blogId,
+      isApproved: true
+    }).sort({ createdAt: -1 });
+
+    res.json({
+      success: true,
+      message: "Comments fetched successfully",
+      comments
+    });
+
   } catch (error) {
-    res.json({success:false,message:error.message})
-    
+    console.error("getBlogComments error:", error);
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
   }
-}
+};
+
 
 export const generateContent = async (req,res)=>{
   try {
