@@ -3,7 +3,7 @@
 
 QuickBlog is a modern, lightweight, and responsive blogging platform built with **React**, **Vite**, and **Tailwind CSS**. Designed for simplicity and speed, QuickBlog allows users to create, manage, and read blogs in a beautifully clean interface.
 
-🌐 Live Preview: [quickblog-coral.vercel.app](https://quickblog-coral.vercel.app)
+🌐 Live Preview: [quickblog-coral.render.app](https://quickblog-1-blo6.onrender.com/)
 
 ---
 
