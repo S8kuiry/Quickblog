@@ -19,7 +19,7 @@ const Layout = () => {
     <div className="w-full relative min-h-screen bg-white font-sans">
 
       {/* Top Navbar */}
-      <div className="w-full flex items-center justify-between fixed top-[-28px] left-0 right-0
+      <div className="w-full flex items-center justify-between fixed top-[0px] left-0 right-0
         bg-white border-b border-primary/15 py-2 px-6 z-50 shadow shadow-r-lg">
         <img onClick={()=>navigate('/')} src={assets.logo} className="w-[11rem]" alt="Logo" />
         <button onClick={logout} className="rounded-full bg-primary py-2 px-6 text-white hover:bg-primary/90 transition-all">
